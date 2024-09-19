@@ -1,0 +1,141 @@
+body {
+    /* set font to poppins  */
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 600px; /* Fix typo here */
+}
+
+.main h2 {
+    color: #a7097a;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+
+button[type="submit"] {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #a7097a;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.select-box {
+    width: 100%;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.select-box input {
+    width: 80%;
+    padding: 1rem .6rem;
+    font-size: 1.1rem;
+    border: .1rem solid transparent;
+    outline: none;
+}
+
+.selected-option {
+    background-color: #eee;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.options {
+    position: absolute;
+    top: 4rem;
+    width: 100%;
+    background-color: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+    overflow-y: auto;
+    display: none;
+    z-index: 2;
+}
+
+.options ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.options ul li {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.option div {
+    display: flex;
+    align-items: center;
+}
+
+.option .iconify {
+    margin-right: 10px;
+}
+
+.option strong {
+    margin-left: 10px;
+}
+
+
+.options.active {
+    display: block;
+}
+
+.options .option {
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.options .option:hover {
+    background-color: lightcyan;
+}
+
+.search-box {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: .5rem .5rem 0 0;
+}
